@@ -1,13 +1,22 @@
-package ru.netology.web;
+package ru.netology.selenide;
 
-
+import com.codebrone.selenide.Condition;
 import org.junit.jupiter.api.Test;
+import org.openga.selenium.Keys;
 
 import java.time.Duration;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
-import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
+
+public class AppCardDeliveryTaskOneTest{
+
+    private LocalDate.now().plusDay(addDays).format(DateTimeFormatter.ofPattern(pattern));
+
+}
+
+
 
 class RegistrationTest {
     @Test
